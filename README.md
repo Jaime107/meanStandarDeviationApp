@@ -1,22 +1,34 @@
-# CountLinesApp
+# HOMEWORK 2 ARSW (OO Design)
 
-This proyect count lines of code in a file.
-
+Write a program to calculate the mean and standard deviation of a set of n real numbers.
 
 # LOC/H
 
-1. 2:00 pm - 9:40 pm - lines of code 67 LOC
+1. 6:00 pm - 10:00 pm - fueron en total  172 LOC
+2. 10:00 am - 11:40 pm - fueron en total  143 LOC
+3. Total LOC (315/17) =  18 LOC
+
+# DESIGN
+![Design](img/design.PNG)
+
+# TEST REPORT
+![Test1](img/test1.PNG)
+![Test2](img/test2.PNG)
+![Test3](img/test3.PNG)
+
+## TOTAL TEST
+![fullTest](img/fullTest.PNG)
 
 # START
 
-Clone the project via git clone:
+Copy the project through git clone in any direction to start working:
 ```
-git clone git@github.com:Jaime107/countLinesApp.git
+git clone git@github.com:Jaime107/meanStandarDeviationApp.git
 ```
 
 ## PRE-REQUISITES
 
-* Java jdk > 8
+* Java jdk > 7
 * Maven (Apache Maven)
 * Git
 
@@ -27,31 +39,39 @@ git clone git@github.com:Jaime107/countLinesApp.git
 ```
 $$ mvn package
 ```
+2.(Optional):
+If you want to view the documentation of the application, execute the following command and check the following path: root / target:
 
-2. (Run):
+```
+mvn javadoc:javadoc
+```
+
+3. (Run):
 The following command must be used in the project root folder:
+  
+```
+java -cp target/DeviationStandartApp-1.0-SNAPSHOT edu.escuelaing.arsw.deviationstandart.app.App src/test/resources/ProxySize.txt
+```
 
-### EXAMPLE 1 (LOC lines):
 ```
-java -cp "./target/classes" edu.escuelaing.arsw.loccount.app.CountLinesApp loc /home/jaime/Documentos/arsw_talleres/filesCount/
+java -cp target/DeviationStandartApp-1.0-SNAPSHOT edu.escuelaing.arsw.deviationstandart.app.App src/test/resources/DevelopmentHours.txt
 ```
-### EXAMPLE 2 (PHY lines):
-```
-java -cp "./target/classes" edu.escuelaing.arsw.loccount.app.CountLinesApp phy /home/jaime/Documentos/arsw_talleres/filesCount/
-```
+
+![Proyecto](img/1.PNG)
+  
 
 ## BUILT
 
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [JAVA JDK 8](http://www.oracle.com/technetwork/java/javase/overview/index.html) - Building
+* [JUnit 3.8.1](https://mvnrepository.com/artifact/junit/junit/3.8.1) - Test
 
 
 ## AUTHOR
 
-* **JAIME MARTINEZ SOSA** - [Jaime107](https://github.com/Jaime107)
+* **JAIME MARTINEZ SOSA** - [Jaime107](git@github.com:Jaime107)
 
 
 ## LICENSE
 
-This project is licensed
-
+This project is licensed under the GNU General Public License - [LICENSE](LICENSE) 
